@@ -117,14 +117,7 @@
             /*Cat elem*/
             cat = document.getElementById("p")
 
-            /*Pop mp3s*/
-            pops = [
-                "pops/pop1.mp3",
-                "pops/pop2.mp3",
-                "pops/pop3.mp3",
-                "pops/pop4.mp3",
-            ]
-            pop_i = 0
+
             
             /*Cookie utils*/
             function getCookie(cname) {
@@ -155,14 +148,6 @@
             op_func = function(){ 
                 /*Chance cat image to op.jpg via css*/
                 cat.id = "op"
-
-                /*Play pop noise*/
-                a = new Audio(pops[pop_i])
-                a.load()
-                a.play()
-
-                /*Increment index for next pop noise*/
-                pop_i = (pop_i+1)%pops.length
 
                 /*Increment pop count*/
                 pop_count++
